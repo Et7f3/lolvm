@@ -1,8 +1,8 @@
 language: c
 script:
   - git clone https://github.com/Et7f3/ocp-build
-  - opam init --comp=4.0.7
-  - opam pin .
+  - opam init --comp=4.0.7 --yes
+  - opam pin --yes .
 addons:
   apt:
     sources:
