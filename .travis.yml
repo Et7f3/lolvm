@@ -1,2 +1,11 @@
 language: c
-script: sleep 500
+script:
+  - git clone https://github.com/Et7f3/ocp-build
+addons:
+  apt:
+    sources:
+    - avsm
+    packages:
+    - ocaml
+    - opam
+    - ocaml-native-compilers
