@@ -1,7 +1,7 @@
 language: c
 script:
   - git clone https://github.com/Et7f3/ocp-build
-  - opam switch -c ocaml-base-compiler.4.07.1 --yes
+  - opam init -c ocaml-base-compiler.4.07.1 --yes
   - opam init --bare
   - opam switch list-available
   - opam init --packages=ocaml-base-compiler.4.0.7 --yes
