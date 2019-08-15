@@ -1,7 +1,7 @@
 language: c
 script:
   - git clone https://github.com/Et7f3/ocp-build
-  - opam init --comp=4.0.7 --yes
+  - opam init --comp=ocaml-base-compiler.4.0.7 --yes
   - opam pin --yes .
 addons:
   apt:
