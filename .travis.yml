@@ -5,6 +5,7 @@ script:
   - opam init -c ocaml-base-compiler.4.07.1 --yes
   - opam pin --yes .
   - opam install . --yes
+  -  find $(opam config var prefix) -type f -name 'ocp-*' | grep -v '*\.cm*'
 addons:
   apt:
     sources:
