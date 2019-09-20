@@ -1,11 +1,13 @@
 language: c
 script:
-  - git clone https://github.com/Et7f3/ocp-build
-  - cd ocp-build
-  - opam init -c ocaml-base-compiler.4.07.1 --yes
-  - opam pin --yes .
-  - opam install . --yes
-  -  find $(opam config var prefix) -type f -name 'ocp-*' | grep -v '*\.cm*'
+  - apt-get update
+  - apt-get install clang-format
+  - # git clone https://github.com/Et7f3/ocp-build
+  - # cd ocp-build
+  - # opam init -c ocaml-base-compiler.4.07.1 --yes
+  - # opam pin --yes .
+  - # opam install . --yes
+  - # find $(opam config var prefix) -type f -name 'ocp-*' | grep -v '*\.cm*'
 addons:
   apt:
     sources:
